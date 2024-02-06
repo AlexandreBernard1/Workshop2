@@ -3,7 +3,7 @@ TD : CDOF1
 
 Ce fichier contient les réponse aux questions posées dans le fichier READLE
 
-# TORRENT 
+# TORRENT  
 Q1 - Create a torrent containing this image
 torrent create Chaton.jpeg
 
