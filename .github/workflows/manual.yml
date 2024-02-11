@@ -1,24 +1,21 @@
-name: Deploy IPFS Chaton
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-  workflow_dispatch:
+on: [push]
 
 jobs:
-  build:
+  hello_world_job:
     runs-on: ubuntu-latest
-
+    name: Doing test deploy to Pinata
     steps:
-      - name: IPFS Pinata deploy GitHub action      
-        uses: popovoleksandr/ipfs-pinata-deploy-action@v1.6.3
+      - uses: actions/checkout@v2.1.0
+      - name: Pinata deploy action step
+        id: deploy
+        uses: anantaramdas/ipfs-pinata-deploy-action@v1.6.4
         with:
-          pin-name: 'My cat site'
-          path: './resources'
+          pin-name: 'TESTING (v1.6.3)'
+          path: './.github/workflows/site2test'
           pinata-api-key: 4467b5c8031e0ebee1f6
           pinata-secret-api-key: ce4adf952f0dcdb3bd15f337d95c13f05e8c2ebf186a86625d65f5c7821710e3
           verbose: true
           remove-old: false
+      # Use the output from the `deploy` step
+      - name: Get the output hash
+        run: echo "The hash was ${{ steps.deploy.outputs.hash }}"
