@@ -55,3 +55,12 @@ Si on importe le dossier partition2, on observe que le hash est identique à cel
 ![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/b9e13d77-5ccc-410a-a070-6d49f650e3d0)
 ![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/d22ac2d1-426e-4e65-8bf6-008e78244bd2)
 
+
+# Upload files on IPFS using Pinata
+Nous généros l'API KEY avec pinata puis on modifie le code fournis avec les bon token et le bon path vers l'image.
+On exécute le fichier pinata.js dans l'invite de commande avec node pinata.js.
+On obtient : 
+![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/62d00958-a5bc-4595-a4ce-e264db939f55)
+On peut vérifier que le fichier est bien sur le serveur pinata
+![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/a8d9f5d4-0914-49f2-83c6-8dc69911e5b1)
+
