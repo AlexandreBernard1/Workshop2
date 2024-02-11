@@ -5,8 +5,9 @@ Ce fichier contient les réponse aux questions posées dans le fichier READLE
 
 # TORRENT  
 Q1 - Create a torrent containing this image
-torrent create Chaton.jpeg -o chaton_torrent.torrent
 On crée le fichier torrent de Chaton.jpeg et on le met dans le chaton_torrent.torrent
+torrent create Chaton.jpeg -o chaton_torrent.torrent
+
 ![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/47fcf900-7275-4839-977a-50a4fa277769)
 ![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/46cc1684-6768-4482-a859-1308c3968fda)
 
