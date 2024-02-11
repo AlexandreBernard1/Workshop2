@@ -11,7 +11,7 @@ jobs:
         uses: anantaramdas/ipfs-pinata-deploy-action@v1.6.4
         with:
           pin-name: 'TESTING (v1.6.3)'
-          path: './.github/workflows/'
+          path: './.github/workflows/site2test'
           pinata-api-key: 4467b5c8031e0ebee1f6
           pinata-secret-api-key: ce4adf952f0dcdb3bd15f337d95c13f05e8c2ebf186a86625d65f5c7821710e3
           verbose: true
