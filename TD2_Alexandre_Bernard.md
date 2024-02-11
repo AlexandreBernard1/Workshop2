@@ -21,6 +21,11 @@ torrent create partition1 -o partition1.torrent
 On peut accéder aux informations des fichiers torrents avec la commande : 
 torrent infot <nom_fichier>
 
+Après avoir copié l'image dans un nouveau répertoire nommé "partition1" et créé un torrent de ce répertoire,
+nous observons que le fichier torrent résultant contient des métadonnées liées à la structure du répertoire ainsi qu'au fichier image.
+La différence principale entre un fichier et un dossier lors de la génération d'un torrent file est que, lorsqu'un dossier est torrentisé,
+le fichier torrent résultant inclut non seulement les métadonnées du fichier lui-même, 
+mais également les métadonnées de la structure du répertoire et de tous les fichiers et sous-répertoires qu'il contient.
 
 
 Q3 - Copy the partition1 folder and then generate the associated torrent. What do you observe?
@@ -28,5 +33,23 @@ On copie le dossier partition1 et on crée le même dossier que l'on renome part
 torrent create partition2 -o partition2.torrent
 Ce fichier torrent est la copie du fichier torrent crée à partir de partition1 à l'exception du changerment de partition1 à partition2
 
-Q4 
-Voici le cid : QmeJaufp9seXCpHMFwxX53P3oRQW8Ny1DduCXAxebEwxv7
+# IPFS
+Q1 - Upload the previous image to IPFS.
+Après l'import, on peut obtenir le CID : QmeJaufp9seXCpHMFwxX53P3oRQW8Ny1DduCXAxebEwxv7
+![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/369daefc-f581-474e-a598-d698412cb3aa)
+
+Q2 - Now upload partition1 to IPFS. What do you observe compared to the torrent part?
+Après l'import, on peut obtenir le CID : QmPKRGW6BQ3i4Z4W4etVogYDRqoJRyFRCcD5FJrPKgNJPK
+![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/0537d9ba-171f-48e3-bab2-b1bc7c82918c)
+![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/3e417b20-3ed8-4c22-90e1-9eb75e61180f)
+
+Après le téléchargement dans IPFS, le répertoire "partition1" est géré comme une seule entité.
+Toute sa structure ainsi que son contenu, incluant le fichier image qu'il contient, sont hashés en un seul hachage unique.
+Cette méthode se distingue de BitTorrent, où chaque fichier dans le répertoire est hashé individuellement et où la structure du répertoire n'est pas conservée dans le fichier torrent.
+
+Q3 - Copy the partition1 folder and then generate the associated torrent. What do you observe?
+Après l'import, on peut obtenir le CID : QmPKRGW6BQ3i4Z4W4etVogYDRqoJRyFRCcD5FJrPKgNJPK
+Si on importe le dossier partition2, on observe que le hash est identique à celui de parition1
+![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/b21b5911-cd10-49fa-8019-aeba80a78b0d)
+![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/b9e13d77-5ccc-410a-a070-6d49f650e3d0)
+
