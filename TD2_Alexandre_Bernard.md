@@ -67,6 +67,11 @@ On peut vérifier que le fichier est bien sur le serveur pinata
 
 # Leverage P2P to create a website hosted decentralizely.
 On crée un flux de travail GitHub Actions pour automatiser la mise à jour des modifications apportées aux fichiers sur IPFS en utilisant le service Pinata.
+![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/5ba7083d-915b-4690-a4c6-36701173d5ed)
 
 On met le command suivant dans le fichier .github/workflows/manual.yml
+![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/d2ee206d-b9f6-43b2-bc86-33b8160deaa8)
+
 ```
+
+
