@@ -42,6 +42,7 @@ Q2 - Now upload partition1 to IPFS. What do you observe compared to the torrent 
 Après l'import, on peut obtenir le CID : QmPKRGW6BQ3i4Z4W4etVogYDRqoJRyFRCcD5FJrPKgNJPK
 ![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/0537d9ba-171f-48e3-bab2-b1bc7c82918c)
 ![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/3e417b20-3ed8-4c22-90e1-9eb75e61180f)
+![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/22ea50fe-1324-449d-903f-c9ddfafa7331)
 
 Après le téléchargement dans IPFS, le répertoire "partition1" est géré comme une seule entité.
 Toute sa structure ainsi que son contenu, incluant le fichier image qu'il contient, sont hashés en un seul hachage unique.
@@ -52,4 +53,5 @@ Après l'import, on peut obtenir le CID : QmPKRGW6BQ3i4Z4W4etVogYDRqoJRyFRCcD5FJ
 Si on importe le dossier partition2, on observe que le hash est identique à celui de parition1
 ![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/b21b5911-cd10-49fa-8019-aeba80a78b0d)
 ![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/b9e13d77-5ccc-410a-a070-6d49f650e3d0)
+![image](https://github.com/AlexandreBernard1/Workshop2/assets/149503355/d22ac2d1-426e-4e65-8bf6-008e78244bd2)
 
